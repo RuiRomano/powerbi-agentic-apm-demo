@@ -4,6 +4,6 @@
 
 ## Instructions
 
-- Clone the repo
-- Run `apm install`
-- Open GitHub Copilot and test the skills and MCP
+- Create empty folder
+- Run `apm install ruiromano/powerbi-agentic-apm-demo --target copilot`
+  
