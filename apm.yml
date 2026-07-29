@@ -1,6 +1,6 @@
 name: powerbi-agentic
 version: 1.0.0
-author: microsoft
+author: ruiromano
 targets:
 - copilot
 dependencies:
