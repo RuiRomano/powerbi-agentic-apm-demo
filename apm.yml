@@ -1,0 +1,25 @@
+name: powerbi-agentic
+version: 1.0.0
+author: microsoft
+targets:
+- copilot
+dependencies:
+  apm:    
+    - microsoft/skills-for-fabric/skills/semantic-model-authoring
+    - microsoft/skills-for-fabric/skills/powerbi-report-authoring
+    - microsoft/skills-for-fabric/skills/powerbi-report-design
+    - microsoft/skills-for-fabric/skills/powerbi-report-management
+    - microsoft/skills-for-fabric/skills/powerbi-report-planning
+    - microsoft/skills-for-fabric/skills/fabriciq    
+  mcp:    
+    - name: powerbi-modeling-mcp
+      registry: false
+      transport: stdio
+      command: npx
+      args: ["-y", "@microsoft/powerbi-modeling-mcp@latest", "--start"]    
+    - name: fabriciq 
+      registry: false     
+      transport: http
+      url: "https://api.fabric.microsoft.com/v1/mcp/fabricaihub/integrations/m365"      
+      headers:
+        "X-VARIANTS": "Fabric.Routing.PowerBIDataExploration"
