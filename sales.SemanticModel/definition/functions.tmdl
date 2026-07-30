@@ -1,0 +1,17 @@
+/// amount - sales amount
+/// Returns:
+/// double: The amount with tax as double
+function AddTax =
+		(
+		            amount : double
+		        ) =>
+		        amount * 1.1
+	lineageTag: 11d34bb8-904c-4380-b905-551fde304afb
+
+function TestFunction =
+		(
+		            amount : double
+		        ) =>
+		        amount * 1.1
+	lineageTag: 560df0ba-236f-4615-81cb-bf0be96311ad
+

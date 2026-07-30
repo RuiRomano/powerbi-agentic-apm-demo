@@ -1,0 +1,19 @@
+createOrReplace
+
+
+	ref table Sales
+
+		measure 'New Measure' =
+				
+				var withoutTax = SUMX('Sales', 'Sales'[Quantity] * 'Sales'[Net Price])
+				var withTax = TestFunction(withoutTax)
+				return withTax
+			formatString: $ #,##0			
+
+			annotation PBI_FormatHint = {"isCustom":true}
+
+	function TestFunction =
+			(
+			            amount : double
+			        ) =>
+			        amount * 1.1	

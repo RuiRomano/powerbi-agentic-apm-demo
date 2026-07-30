@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "5027d1689c2b39e90120",
+  "position": {
+    "x": 9.7215189873417724,
+    "y": 0,
+    "z": 0,
+    "height": 709.6708860759494,
+    "width": 571.94936708860757,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "qnaVisual",
+    "objects": {
+      "hiddenProperties": [
+        {
+          "properties": {
+            "savedUtterance": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top 5 customers by Sales Amount'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,13 @@
+DEFINE
+    /// AddTax takes in amount and returns amount including tax    
+    /// Arguments:
+    ///     amount - sales amount
+    /// Returns:
+    ///     double: The amount with tax as double 
+    FUNCTION AddTax = (
+            amount : double
+        ) =>
+        amount * 1.1
+
+EVALUATE
+{ AddTax ( 10 ) }

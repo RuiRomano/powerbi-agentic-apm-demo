@@ -1,0 +1,22 @@
+table 'Param - Selected Cost'
+	lineageTag: f6c74271-1eda-4d74-8347-efdca4491442
+
+	column 'Selected Cost'
+		formatString: 0
+		lineageTag: b0b5e8f9-f51b-4e4d-a442-ff766393712d
+		summarizeBy: none
+		sourceColumn: [Value]
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 0
+				}
+
+		annotation SummarizationSetBy = User
+
+	partition 'Param - Selected Cost' = calculated
+		mode: import
+		source = GENERATESERIES(0, 100, 5)
+
+	annotation PBI_Id = ba24567b9d4d4ea19766ec6510acbcba
+

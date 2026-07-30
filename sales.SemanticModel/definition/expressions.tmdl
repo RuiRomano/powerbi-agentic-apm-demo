@@ -1,0 +1,10 @@
+expression CSV_Location = "https://raw.githubusercontent.com/pbi-tools/sales-sample/data/" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 39c7bef4-452b-4b29-846c-f788ef1af01f
+
+	annotation PBI_ResultType = Text
+
+expression Environment = "DEV" meta [IsParameterQuery=true, List={"DEV", "QUAL", "PRD"}, DefaultValue="DEV", Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 64edd943-1a90-4438-b62f-bb95a9da1510
+
+	annotation PBI_ResultType = Text
+

@@ -1,9 +1,9 @@
 ## Pre Requisites
 
-- Install APM: `irm https://aka.ms/apm-windows | iex`
+- Install [APM](https://microsoft.github.io/apm/): `irm https://aka.ms/apm-windows | iex`
 
 ## Instructions
 
-- Create empty folder
-- Run `apm install ruiromano/powerbi-agentic-apm-demo --target copilot`
-  
+- Clone this repo
+- Run `apm install --target copilot`
+- APM ensures you have the right skills and MCPs to be successful when developing with AI agents.
